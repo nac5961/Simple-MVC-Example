@@ -4,6 +4,7 @@ const router = (app) => {
   app.get('/page1', controllers.page1);
   app.get('/page2', controllers.page2);
   app.get('/page3', controllers.page3);
+  app.get('/page4', controllers.page4);
   app.get('/getName', controllers.getName);
   app.get('/findByName', controllers.searchName);
 
@@ -12,6 +13,10 @@ const router = (app) => {
   app.get('/*', controllers.notFound);
 
   app.post('/setName', controllers.setName);
+
+  // Routes for creating a new dog and increasing its age
+  app.post('/createDog', controllers.createDog);
+  app.post('/increaseAge', controllers.increaseAge);
 
   app.post('/updateLast', controllers.updateLast);
 };

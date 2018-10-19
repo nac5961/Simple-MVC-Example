@@ -5,10 +5,30 @@
 </head>
 <body>
   <h1>Welcome to page 3</h1>
+  <!-- Form for creation of a new dog -->
+  <h2>Create a Dog</h2>
+  <form action="/createDog" method="POST">
+	<label for="name">Name:</label>
+	<input type="text" name="name" />
+	<label for="breed">Breed:</label>
+	<input type="text" name="breed" />
+	<label for="age">Age:</label>
+	<input type="number" name="age" />
+	<input type="submit" value="Submit" />
+  </form>
+  
+  <!-- Form for looking up dog and increasing its age -->
+  <h2>Increase Age of a Dog</h2>
+  <form action="/increaseAge" method="POST">
+	<label for="name">Name:</label>
+	<input type="text" name="name" />
+	<input type="submit" value="Submit" />
+  </form>
   
   <!-- links or URLs are always GET resources as they are getting (retrieving) a resource -->
   <a href="/">Home</a>
   <a href="/page1">Page 1</a>
   <a href="/page2">Page 2</a>
+  <a href="/page4">Page 4</a>
 </body>
 </html>
